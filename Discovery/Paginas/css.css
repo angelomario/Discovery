@@ -1,0 +1,606 @@
+*{
+    margin:0 auto;
+    padding: 0;
+    font-weight:200;
+    
+}
+.abrir{
+    display:block;
+    z-index:1;
+    width: 100%;
+    height: 300px;
+    background: transparente;
+    margin: 0;
+    padding: 0;
+}
+.fixar{
+    position:fixed;
+    display:inline-block;
+    margin: auto;
+    z-index: -1;
+    width: 360px;
+    height: 100%;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+body{
+    background:#000;
+    color: #ffffff;
+}
+main{
+    background: #000;
+    margin: auto;
+    width: 360px;
+}
+img{
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    transition:1s;
+    
+}
+
+.destaque{
+    width: 100%;
+    height: 280px;
+    position:relative;
+    overflow:hidden;
+}
+.span{
+    color:inherit;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    right:0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-30deg,rgba(0,0,0,0.9), transparent);
+    text-align:right;
+    z-index:20;
+    overflow:hidden;
+}
+p,h3{
+    background: transparent;
+    text-align: right;
+    width: 70%;
+    display: block;
+    padding-right:6px ;
+    color: inherit;
+    position: relative;
+    margin-right: 0%;
+    top: 170px;
+}
+hr{
+    border:none;
+    float:left;
+    width: 4px;
+    height: 30px;
+    border-radius:10px;
+    display:inline-block;
+    background:orange;
+    margin:0px 8px 0px 4px;
+    
+}
+.animais,.viajem {
+    float:none;
+    width: 60px;
+    height: 4px;
+    display:block;
+    margin:4px auto;
+}
+.h{
+    text-align: left;
+    color:inherit;
+    width: 200px;
+    display:inline-block;
+    position:static;
+    line-height:30px;
+    
+}
+.h2{
+    text-align: center;
+    color:inherit;
+    width: 200px;
+    display:block;
+    float:none;
+    position:static;
+    line-height:30px;
+    margin: auto;
+}
+.div{
+    width: 100%;
+    padding: 15px 0px;
+    position:static;
+}
+.reais{
+    border:none;
+    width: 100%;
+    display:block;
+    margin: auto;
+    height: 150px;
+    position:relative;
+  
+    transition:0.4s;
+}
+h3{
+    border-bottom: 1px solid rgba(255, 166, 0, 0.521);
+}
+.btn{
+    position:absolute;
+    z-index:10;
+    background: rgb(255, 255, 255);
+    color: #000;
+    height: 75px;
+    overflow:hidden;
+    text-align:center;
+    bottom:0;
+       
+    
+}
+.artigo{
+    display:inline-block;
+    font-size:1em;
+    overflow:hidden;
+    flex-shrink:0;
+    width: 150px;
+    height: 225px;
+    margin: 0px 15px;
+    position:relative;
+}
+.artigos{
+    color: #000;
+    display:flex;
+    flex-wrap:no-wrap;
+    align-items:center;
+    flex-shrink:0;
+    margin: auto;
+    width: 100%;
+    overflow:auto;
+    height: 250px;
+    padding: 0;
+}
+.animal{
+    padding-left: 5px;
+}
+.artigo:hover .art_foto{
+   width: 160px;
+   height: 165px; 
+   transition:0.4s;
+}
+.animal_artigo{
+    width: 360px;
+    
+}
+.diario{
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    float:none;
+    color:inherit;
+}
+.d{
+    overflow:hidden;
+    position:relative;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    float:none;
+    color:inherit;
+    height: 420px;
+    width:300px;
+}
+.download{
+    height: 50px;
+    text-align:center;
+    font-size:0.9em;
+    background: orange;
+    padding:0px;
+    font-weight:bold;
+    line-height:50px;
+    transition:0.3s;
+}
+.d_foto{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+.download:hover{
+    background: #fff;
+    transition:0.3s;
+}
+.baleia{
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    position:relative;
+    overflow:hidden;
+    height: 200px;
+}
+.baleia-img{
+   position: absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-0%);
+    width:100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.btn-animal{
+    height: 50px;
+    text-align:center;
+    font-size:0.9em;
+    background: orange;
+    padding:0px;
+    font-weight:bold;
+    line-height:50px;
+    transition:0.3s;
+    color:#000;
+    margin: 0;
+}
+.span-baleia{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    right:0;
+    top:0;
+    width: 100%;
+    display:block;
+    height:100%;
+    color: #fff;
+    background: linear-gradient(to top,rgba(0,0,0,0.68), transparent);
+    text-align:right;
+    z-index:20;
+    
+}
+.txt-baleia{
+    display:block;
+    position:static;
+    margin:  140px auto 0px;
+    width: 300px;
+    height: 60px;
+    text-align:center;
+}
+.btn-animal:hover{
+    background: #fff;
+    transition:0.3s;
+}
+.animal{
+    width: 200px;
+    height: 220px;
+    overflow:hidden;
+    position: relative;
+    flex-shrink:0;
+    margin: 0px 20px 0px 0px;
+}
+.bichos{
+    position: absolute;
+    display:block;
+    margin: auto;
+    top:0px;
+    width:100%;
+    height: 120px;
+    transition:0.3s;
+}
+.spn-animal{
+    position: absolute;
+    background: #000;
+    z-index:10;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 120px);
+    color:#fff;
+}
+.txt-anml{
+    width: 100%;
+    display:block;
+    margin:0px auto;
+    padding:4px 0px;
+    font-weight:300;
+    text-align:left;
+    border-top:1px solid gray;
+    
+}
+.art-animal{
+    width: 100%;
+    display:block;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    height: 35px;
+    background: orange;
+    font-weight:500;
+    line-height:35px;
+    position: absolute;
+    bottom:0px;
+    transition:0.4s;
+    
+}
+.art-animal:hover{
+    background: #fff;
+    color:#000;
+    transition:0.4s;
+}
+.animal:hover .bichos{
+    width: 105%;
+    height: 130px;
+    transition:0.3s;
+}
+.turismo{
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow:hidden;
+}
+.tur{
+   width: 100%;
+   height: 100%;
+   margin: auto;
+}
+.pos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    background: linear-gradient(to top,#000 , transparent,transparent,transparent, #000);
+}
+.info{
+    margin: auto;
+    text-align:center;
+    color:#fff;
+    padding: 30px 0px 2px 0px;
+}
+i{
+    font-size:1.4em;
+    display:block;
+    margin: auto;
+}
+.visitar{
+    display:block;
+    margin: auto;
+    text-align:center;
+    font-size:0.9em;
+    color:#fff;
+    width: 200px;
+    height: 40px;
+    line-height:40px;
+    border:1px solid orange;
+    margin: 20px auto;
+    transition:0.4s;
+}
+.visitar:hover{
+    background: orange;
+    color:#000;
+    transition:0.4s;
+}
+.txt-aquario{
+    width: 100%;
+}
+.h4{
+    color:white;
+    display:block;
+    overflow:visible;
+    width: 84%;
+    margin: auto;
+    text-align:center;
+    position: static;
+}
+.section{
+    margin:0px auto 40px;
+}
+.view{
+    display:block;
+    background: #000;
+    height: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width:425px) {
+    main{
+        width: 425px;
+    }
+    .baleia,.baleia-img{
+        width: 100%;
+        height: 240px;
+    }
+    .txt-baleia{
+        margin-top:170px;
+    }
+    .fixar{
+        width: 425px;
+    }
+    .animal_artigo,.turismo,.pos{
+        width: 100%;
+    }
+    .turismo,.pos{
+        height: 320px;
+    }
+    h3,p{
+        top: calc(100% - 100px);
+    }
+    .destaque{
+       height: 300px;
+    }
+    .img{
+        height: 100%;
+    }
+    .pos{
+        height: 100%;
+    }
+
+}
+@media screen and (min-width:500px) {
+    main{
+        width: 500px;   
+    }
+    .destaque{
+        height: 340px;
+    }
+    p,h3{
+        background: transparent;
+        text-align: right;
+        width: 70%;
+        display: block;
+        padding-right:6px ;
+        color: inherit;
+        position: relative;
+        margin-right: 0%;
+        top: 240px;
+    }
+    .baleia,.btn-animal{
+        margin: auto;
+        width: 500px;
+    }
+    .fixar{
+        width: 500px;
+    }
+    .txt-baleia{
+        margin:  200px auto 0px;  
+    }
+    .baleia,.baleia-img{
+        height: 270px;
+    }
+    .turismo{
+        width: 100%;
+        height: 390px;
+    }
+    .animal_artigo{
+        width: 100%;
+    }
+    .pos{
+        height: 100%;
+    }
+}
+@media screen and (min-width:650px) {
+
+    main{
+        width: 650px;
+    }
+    .destaque{
+        font-size: 1.2em;
+        height: 470px;
+    }
+    p,h3{
+        top: 340px;
+    }
+    .abrir{
+        display: none;
+    }
+    .baleia,.btn-animal{
+        margin: auto;
+        width:620px;
+    }
+    .baleia,.baleia-img{
+        height: 330px;
+    }
+    .turismo{
+        height: 460px;
+    }
+    .artigos{
+        height: 270px;
+    }
+    .spn-animal{
+        padding-bottom: 12px;
+    }
+    .txt-baleia{
+        width: 75%;
+        font-size: 1.14em;
+        margin:  250px auto 0px;  
+    }
+    .pos{
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    main{
+        width: 768px;
+    }
+    .destaque{
+        height: 540px;
+     }
+     h3,p{
+        top: calc(100% - 120px);
+    }
+    .abrir{
+        display: none;
+    }
+    .artigos{
+        font-size: 1.07em;
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+        height: 280px;
+    }
+    .artigo{
+    
+        width: 180px;
+    }
+    .artigo:hover .art_foto{
+        width: 190px;
+        height: calc(100% - 54px);
+        transition: 0.26s;
+    }
+    .art_foto{
+        height: calc(100% - 64px);
+    }
+    .btn{
+        height: 65px;
+    }
+    .diario{
+        width: 85%;
+    }
+    .download{
+        height: 50px;
+    }
+    .d{
+        width: 350px;
+        height: 490px;
+    }
+    .d_foto{
+        height: calc(100% - 50px);
+    }
+    .baleia,.baleia-img{
+        width: 660px;
+        height: 360px;
+    }
+    .txt-baleia{
+        font-weight: 300;
+        font-size: 1.1em;
+        width: 80%;
+        margin-top: 43%;
+    }
+    .btn-animal{
+        width: 660px;
+    }
+    .btn-animal,.baleia{
+        margin: auto;
+    }
+    main:first-of-type{
+        margin-bottom: 10px;
+    }
+    .animal{
+        height: 226px;
+    }
+    .art-animal{
+        color: #000;
+    }
+    .animal_artigo{
+        width: 100%;
+    }
+    .turismo{
+        height: 540px;
+    }
+    .pos{
+        background: linear-gradient(to top,#000 ,transparent,transparent, #000);
+    }
+}
